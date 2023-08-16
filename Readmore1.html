@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paid Internships and Virtual Courses</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #1839db;
+  }
+
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .read-more {
+    color: #3498db;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .read-more:hover {
+    background-color: #e6f7ff;
+    color: #217dbb;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  li:hover {
+    background-color: #e6f7ff;
+    transform: scale(1.02);
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .internship-list,
+  .course-list {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1> Virtual Courses</h1>
+  <p>Are you looking for valuable work experience and educational opportunities? Check out the list of virtual courses below:</p>
+
+  <div class="internship-list">
+    <h2>Paid Internships</h2>
+    <ul>
+      <li>
+        <h3>Marketing Intern</h3>
+        <p>Join our dynamic marketing team and assist with campaigns, social media management, and data analysis.</p>
+      </li>
+      <li>
+        <h3>Software Development Intern</h3>
+        <p>Work on exciting software projects, collaborate with experienced developers, and contribute to cutting-edge solutions.</p>
+      </li>
+      <li>
+        <h3>Finance Intern</h3>
+        <p>Learn about financial analysis, budgeting, and investment strategies while supporting our finance department.</p>
+      </li>
+      <li>
+        <h3>Graphic Design Intern</h3>
+        <p>Create visually engaging graphics and multimedia content for our brand, helping to communicate our message effectively.</p>
+      </li>
+      <li>
+        <h3>Data Science Intern</h3>
+        <p>Utilize data analytics tools to extract valuable insights, conduct research, and contribute to data-driven decision-making.</p>
+      </li>
+      <li>
+        <h3>Sales Intern</h3>
+        <p>Assist our sales team in lead generation, customer outreach, and developing strategies to boost revenue.</p>
+      </li>
+      <li>
+        <h3>Human Resources Intern</h3>
+        <p>Gain experience in recruitment, employee relations, and HR processes to support our growing workforce.</p>
+      </li>
+      <li>
+        <h3>Content Writing Intern</h3>
+        <p>Craft compelling and engaging written content for our website, blog, and marketing materials.</p>
+      </li>
+      <li>
+        <h3>Video Production Intern</h3>
+        <p>Collaborate on video shoots, editing, and post-production to create captivating visual content.</p>
+      </li>
+      <li>
+        <h3>Virtual Events Intern</h3>
+        <p>Assist in planning, organizing, and executing virtual events, webinars, and online conferences.</p>
+      </li>
+      <li>
+        <h3>IT Support Intern</h3>
+        <p>Provide technical support, troubleshoot hardware and software issues, and assist with network maintenance.</p>
+      </li>
+    </ul>
+  </div>
+
+  <p><a class="read-more">Read More</a></p>
+  <div id="more-info" style="display: none;">
+    <p>Internships provide a hands-on learning experience, allowing you to apply classroom knowledge to real-world scenarios. They also give you the chance to explore different industries and roles, helping you discover your passions and strengths.</p>
+    <p>Virtual courses offer flexible learning opportunities, enabling you to enhance your skills and knowledge from the comfort of your own home. Whether you're interested in programming, marketing, or other fields, there's a virtual course for you.</p>
+  </div>
+</div>
+
+<script>
+  const readMoreLink = document.querySelector('.read-more');
+  const moreInfo = document.getElementById('more-info');
+
+  readMoreLink.addEventListener('click', () => {
+    moreInfo.style.display = 'block';
+    readMoreLink.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>

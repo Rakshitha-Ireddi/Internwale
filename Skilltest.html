@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill Test for Internship Applicants</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .question-box {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #333;
+    margin-top: 0;
+  }
+
+  .options {
+    list-style: none;
+    padding: 0;
+  }
+
+  .option {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .results {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Skill Test for Internship Applicants</h1>
+  <form id="skillTestForm">
+    <div class="question-box">
+      <h2>Question 1: What does HTML stand for?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q1" value="a">a) Hyper Transfer Markup Language</li>
+        <li class="option"><input type="radio" name="q1" value="b">b) Hyper Text Markup Language</li>
+        <li class="option"><input type="radio" name="q1" value="c">c) High Transfer Markup Language</li>
+        <li class="option"><input type="radio" name="q1" value="d">d) High Text Markup Language</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 2: Which of the following is a programming language?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q2" value="a">a) HTML</li>
+        <li class="option"><input type="radio" name="q2" value="b">b) CSS</li>
+        <li class="option"><input type="radio" name="q2" value="c">c) JavaScript</li>
+        <li class="option"><input type="radio" name="q2" value="d">d) XML</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 3: Which programming language is often used for data analysis?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q3" value="a">a) Java</li>
+        <li class="option"><input type="radio" name="q3" value="b">b) Python</li>
+        <li class="option"><input type="radio" name="q3" value="c">c) C++</li>
+        <li class="option"><input type="radio" name="q3" value="d">d) PHP</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 4: What does CSS stand for?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q4" value="a">a) Computer Style Sheets</li>
+        <li class="option"><input type="radio" name="q4" value="b">b) Cascading Style Sheets</li>
+        <li class="option"><input type="radio" name="q4" value="c">c) Colorful Style Sheets</li>
+        <li class="option"><input type="radio" name="q4" value="d">d) Creative Style Sheets</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 5: Which tag is used to create an unordered list in HTML?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q5" value="a">a) &lt;ul&gt;</li>
+        <li class="option"><input type="radio" name="q5" value="b">b) &lt;li&gt;</li>
+        <li class="option"><input type="radio" name="q5" value="c">c) &lt;ol&gt;</li>
+        <li class="option"><input type="radio" name="q5" value="d">d) &lt;dl&gt;</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 6: Which programming language is often used for web development?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q6" value="a">a) Java</li>
+        <li class="option"><input type="radio" name="q6" value="b">b) Python</li>
+        <li class="option"><input type="radio" name="q6" value="c">c) C++</li>
+        <li class="option"><input type="radio" name="q6" value="d">d) Ruby</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 7: What is the full form of SQL?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q7" value="a">a) Structured Question Language</li>
+        <li class="option"><input type="radio" name="q7" value="b">b) Structured Query Language</li>
+        <li class="option"><input type="radio" name="q7" value="c">c) Secure Query Language</li>
+        <li class="option"><input type="radio" name="q7" value="d">d) Simple Query Language</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 8: Which of the following is used for styling web pages?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q8" value="a">a) HTML</li>
+        <li class="option"><input type="radio" name="q8" value="b">b) CSS</li>
+        <li class="option"><input type="radio" name="q8" value="c">c) JavaScript</li>
+        <li class="option"><input type="radio" name="q8" value="d">d) Java</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 9: Which element is used to define a table row in HTML?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q9" value="a">a) &lt;td&gt;</li>
+        <li class="option"><input type="radio" name="q9" value="b">b) &lt;th&gt;</li>
+        <li class="option"><input type="radio" name="q9" value="c">c) &lt;tr&gt;</li>
+        <li class="option"><input type="radio" name="q9" value="d">d) &lt;table&gt;</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 10: Which programming language is used for adding interactivity to web pages?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q10" value="a">a) HTML</li>
+        <li class="option"><input type="radio" name="q10" value="b">b) CSS</li>
+        <li class="option"><input type="radio" name="q10" value="c">c) JavaScript</li>
+        <li class="option"><input type="radio" name="q10" value="d">d) Java</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 11: Which of the following is a data storage format?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q11" value="a">a) HTML</li>
+        <li class="option"><input type="radio" name="q11" value="b">b) JSON</li>
+        <li class="option"><input type="radio" name="q11" value="c">c) CSS</li>
+        <li class="option"><input type="radio" name="q11" value="d">d) XML</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 12: Which of the following is used for adding structure to web content?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q12" value="a">a) HTML</li>
+        <li class="option"><input type="radio" name="q12" value="b">b) CSS</li>
+        <li class="option"><input type="radio" name="q12" value="c">c) JavaScript</li>
+        <li class="option"><input type="radio" name="q12" value="d">d) Java</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 13: Which of the following is a widely used version control system?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q13" value="a">a) Git</li>
+        <li class="option"><input type="radio" name="q13" value="b">b) Java</li>
+        <li class="option"><input type="radio" name="q13" value="c">c) PHP</li>
+        <li class="option"><input type="radio" name="q13" value="d">d) C++</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 14: Which tag is used to create a hyperlink in HTML?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q14" value="a">a) &lt;link&gt;</li>
+        <li class="option"><input type="radio" name="q14" value="b">b) &lt;a&gt;</li>
+        <li class="option"><input type="radio" name="q14" value="c">c) &lt;href&gt;</li>
+        <li class="option"><input type="radio" name="q14" value="d">d) &lt;url&gt;</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 15: Which programming language is known for its use in scientific computing and data analysis?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q15" value="a">a) JavaScript</li>
+        <li class="option"><input type="radio" name="q15" value="b">b) Python</li>
+        <li class="option"><input type="radio" name="q15" value="c">c) Ruby</li>
+        <li class="option"><input type="radio" name="q15" value="d">d) C++</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 16: Which of the following is a server-side scripting language?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q16" value="a">a) HTML</li>
+        <li class="option"><input type="radio" name="q16" value="b">b) JavaScript</li>
+        <li class="option"><input type="radio" name="q16" value="c">c) Python</li>
+        <li class="option"><input type="radio" name="q16" value="d">d) PHP</li>
+      </ul>
+    </div>
+
+    <div class="question-box">
+      <h2>Question 17: Which programming language is often used for data analysis and statistical computing?</h2>
+      <ul class="options">
+        <li class="option"><input type="radio" name="q17" value="a">a) JavaScript</li>
+        <li class="option"><input type="radio" name="q17" value="b">b) Python</li>
+        <li class="option"><input type="radio" name="q17" value="c">c) Ruby</li>
+        <li class="option"><input type="radio" name="q17" value="d">d) Java</li>
+      </ul>
+    </div>
+
+    <button type="button" onclick="submitTest()">Submit Test</button>
+  </form>
+  
+  <div id="results" class="results" style="display: none;"></div>
+</div>
+
+<script>
+  const correctAnswers = ['b', 'c', 'b', 'b', 'a', 'b', 'b', 'b', 'a', 'c', 'b', 'a', 'a', 'b', 'b', 'd', 'b'];
+  
+  function submitTest() {
+    const form = document.getElementById('skillTestForm');
+    const answers = form.querySelectorAll('input:checked');
+    let score = 0;
+    
+    answers.forEach((answer, index) => {
+      if (answer.value === correctAnswers[index]) {
+        score++;
+      }
+    });
+    
+    const results = document.getElementById('results');
+    results.textContent = `You scored ${score} out of 17.`;
+    results.style.display = 'block';
+  }
+</script>
+</body>
+</html>

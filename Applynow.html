@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internship Application</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fd;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3a5e;
+  }
+
+  .section-title {
+    background-color: #1e3a5e;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1e3a5e;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="file"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .required:after {
+    content: "*";
+    color: red;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #1e3a5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #8995a1;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Internship Application</h1>
+  <form id="applicationForm">
+    <div class="form-group">
+      <label for="name" class="required">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email" class="required">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="mobile" class="required">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+    </div>
+
+    <div class="section-title">Education Details</div>
+    <div class="form-group">
+      <label for="10th-school">10th School Name:</label>
+      <input type="text" id="10th-school" name="10th-school">
+    </div>
+    <div class="form-group">
+      <label for="10th-marks">10th Marks Obtained:</label>
+      <input type="text" id="10th-marks" name="10th-marks">
+    </div>
+    <div class="form-group">
+      <label for="10th-board">10th Board of Study:</label>
+      <input type="text" id="10th-board" name="10th-board">
+    </div>
+
+    <div class="form-group">
+      <label for="12th-college">12th College Name:</label>
+      <input type="text" id="12th-college" name="12th-college">
+    </div>
+    <div class="form-group">
+      <label for="12th-marks">12th Marks Obtained:</label>
+      <input type="text" id="12th-marks" name="12th-marks">
+    </div>
+    <div class="form-group">
+      <label for="12th-group">12th Group Name:</label>
+      <input type="text" id="12th-group" name="12th-group">
+    </div>
+
+    <div class="form-group">
+      <label for="present-area">Present Area of Study:</label>
+      <input type="text" id="present-area" name="present-area">
+    </div>
+    <div class="form-group">
+      <label for="present-year">Present Year:</label>
+      <input type="text" id="present-year" name="present-year">
+    </div>
+    <div class="form-group">
+      <label for="present-cgpa">Present CGPA:</label>
+      <input type="text" id="present-cgpa" name="present-cgpa">
+    </div>
+
+    <div class="section-title">Family Details</div>
+    <div class="form-group">
+      <label for="fatherName">Father's Name:</label>
+      <input type="text" id="fatherName" name="fatherName">
+    </div>
+    <div class="form-group">
+      <label for="fatherOccupation">Father's Occupation:</label>
+      <input type="text" id="fatherOccupation" name="fatherOccupation">
+    </div>
+    <div class="form-group">
+      <label for="fatherMobile">Father's Mobile Number:</label>
+      <input type="tel" id="fatherMobile" name="fatherMobile">
+    </div>
+    <div class="form-group">
+      <label for="motherName">Mother's Name:</label>
+      <input type="text" id="motherName" name="motherName">
+    </div>
+    <div class="form-group">
+      <label for="motherOccupation">Mother's Occupation:</label>
+      <input type="text" id="motherOccupation" name="motherOccupation">
+    </div>
+    <div class="form-group">
+      <label for="motherMobile">Mother's Mobile Number:</label>
+      <input type="tel" id="motherMobile" name="motherMobile">
+    </div>
+
+
+ <div class="section-title">Interested Domain of Internship:</div>
+    <div class="form-group">
+      <label for="interest">Interested in</label>
+      <select id="interest" name="interest">
+        <option value="web">Web Development</option>
+        <option value="data">Data Science</option>
+        <option value="design">Design</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    
+      
+
+    <div class="form-group">
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume">
+    </div>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById('applicationForm').addEventListener('submit', function(event) {
+    const requiredFields = document.querySelectorAll('.required');
+    let valid = true;
+
+    requiredFields.forEach(function(field) {
+      const input = field.nextElementSibling;
+
+      if (input.value.trim() === '') {
+        valid = false;
+        field.style.color = 'red';
+      } else {
+        field.style.color = '#1e3a5e';
+      }
+    });
+
+    if (!valid) {
+      event.preventDefault();
+    }
+  });
+</script>
+
+</body>
+</html>

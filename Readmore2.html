@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Internship Courses</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color:#1839db;
+  }
+
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .read-more {
+    color: #3498db;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .read-more:hover {
+    background-color: #e6f7ff;
+    color: #217dbb;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  li:hover {
+    background-color: #e6f7ff;
+    transform: scale(1.02);
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .course-list {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Summer Internship Courses</h1>
+  <p>Explore a variety of summer internship courses to enhance your skills and gain valuable experience:</p>
+
+  <div class="course-list">
+    <h2>Summer Internship Courses</h2>
+    <ul>
+      <li>
+        <h3>Photography and Visual Storytelling</h3>
+        <p>Capture compelling images and learn how to tell a compelling visual story through photography.</p>
+      </li>
+      <li>
+        <h3>Entrepreneurship and Business Innovation</h3>
+        <p>Explore the fundamentals of entrepreneurship, business planning, and innovative strategies for success.</p>
+      </li>
+      <li>
+        <h3>Artificial Intelligence Fundamentals</h3>
+        <p>Dive into the world of AI, understanding its applications and developing basic AI models.</p>
+      </li>
+      <li>
+        <h3>Environmental Sustainability and Conservation</h3>
+        <p>Learn about sustainable practices, environmental conservation, and ways to promote a greener future.</p>
+      </li>
+      <li>
+        <h3>Mobile App Development with Flutter</h3>
+        <p>Create mobile apps for iOS and Android using Flutter, Google's UI toolkit for building natively compiled applications.</p>
+      </li>
+      <li>
+        <h3>Data Analytics for Business Insights</h3>
+        <p>Discover how to analyze data to gain valuable business insights and support decision-making processes.</p>
+      </li>
+      <li>
+        <h3>Creative Writing and Storytelling</h3>
+        <p>Hone your creative writing skills and explore various forms of storytelling, from fiction to non-fiction.</p>
+      </li>
+      <li>
+        <h3>Robotics and Automation Basics</h3>
+        <p>Get hands-on experience with robotics and automation technologies, and learn how they're shaping various industries.</p>
+      </li>
+      <li>
+        <h3>Financial Literacy and Investment Strategies</h3>
+        <p>Master the basics of personal finance, budgeting, and learn about investment strategies for long-term financial growth.</p>
+      </li>
+      <li>
+        <h3>Health and Wellness Coaching</h3>
+        <p>Explore techniques and approaches to promoting health and wellness through coaching and lifestyle changes.</p>
+      </li>
+      <li>
+        <h3>Cybersecurity Fundamentals</h3>
+        <p>Learn about cybersecurity threats, preventive measures, and strategies to protect digital assets.</p>
+      </li>
+      <li>
+        <h3>Graphic Design for Social Media</h3>
+        <p>Create captivating visual content for social media platforms to engage and attract audiences.</p>
+      </li>
+      <li>
+        <h3>Introduction to Sustainable Architecture</h3>
+        <p>Gain insights into sustainable architectural design principles and practices for a more environmentally conscious built environment.</p>
+      </li>
+      <li>
+        <h3>Video Editing and Post-Production</h3>
+        <p>Learn video editing techniques, color correction, and post-production processes to create professional-quality videos.</p>
+      </li>
+    </ul>
+  </div>
+
+  <p><a class="read-more">Read More</a></p>
+  <div id="more-info" style="display: none;">
+    <p>Summer internship courses provide an excellent opportunity to expand your knowledge and gain practical skills during the break. These courses cover a wide range of topics and can help you prepare for a successful career.</p>
+  </div>
+</div>
+
+<script>
+  const readMoreLink = document.querySelector('.read-more');
+  const moreInfo = document.getElementById('more-info');
+
+  readMoreLink.addEventListener('click', () => {
+    moreInfo.style.display = 'block';
+    readMoreLink.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses Page</title>
+<style>
+  body {
+    background-color: #f4f9fd;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    background-color: #1e3a5e;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+ .attribute-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    align-items: center;
+    padding: 10px;
+    background-color: #273b54; /* Background color for attribute row */
+    color: white;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+
+  .row:hover {
+    background-color: #8995a1;
+  }
+
+  .row.light {
+    background-color: #eef3f8;
+    color: #1e3a5e;
+  }
+
+  .row.light:hover {
+    background-color: #8995a1;
+  }
+
+  .button {
+    padding: 5px 10px;
+    background-color: #1e3a5e;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #8995a1;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">Courses Page</div>
+
+<div class="attribute-row">
+  <div class="column">Course Name</div>
+  <div class="column">Type of Internship</div>
+  <div class="column">Apply Now</div>
+</div>
+
+<div class="row">
+  <div class="column">Introduction to Mechanical Engineering</div>
+  <div class="column">Full Time</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Electrical Circuit Analysis</div>
+  <div class="column">Part Time</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Software Development for Engineers</div>
+  <div class="column">Employed</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Civil Engineering Fundamentals</div>
+  <div class="column">Full Time</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Introduction to Chemical Engineering</div>
+  <div class="column">Part Time</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Data Analysis for Engineering Applications</div>
+  <div class="column">Employed</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Mechatronics and Robotics</div>
+  <div class="column">Full Time</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Environmental Sustainability in Engineering</div>
+  <div class="column">Part Time</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Structural Analysis and Design</div>
+  <div class="column">Employed</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Introduction to Aerospace Engineering</div>
+  <div class="column">Full Time</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Renewable Energy Systems</div>
+  <div class="column">Part Time</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Industrial Automation and Control</div>
+  <div class="column">Employed</div>
+   <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+</div>
+
+<div class="row">
+  <div class="column">Biomedical Engineering Principles</div>
+  <div class="column">Full Time</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Introduction to Materials Science</div>
+  <div class="column">Part Time</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+
+<div class="row">
+  <div class="column">Engineering Project Management</div>
+  <div class="column">Employed</div>
+  <div class="column"><button class="button" onclick="openApplyNowPage()">Apply Now</button></div>
+</div>
+<script>
+  function openApplyNowPage() {
+    window.location.href = "Applynow.html";
+  }
+</script>
+
+</body>
+</html>

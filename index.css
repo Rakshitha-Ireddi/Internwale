@@ -1,0 +1,52 @@
+.bxc{
+    display: 'flex'; 
+    align-content: 'center';
+}
+body {
+    text-align: center;
+  }
+  .sbdiv{
+    background: url(Internwale2.png);
+    
+    width:100%;
+    height: 300px;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    margin-left:20px ;
+    align-items: center;
+  }
+  .box{
+    display: 'flex'; 
+    align-content: 'center';
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #111827;
+    border-radius: 5px;
+    box-shadow: #111827;
+  }
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #111827;
+    color: white;
+    border: none;
+    align-self: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #111827;
+  }
+  .btn1 {
+    background-color: #111827;
+    color: white;
+    border: none;
+    align-self: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #111827;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
